@@ -34,13 +34,17 @@
             this.button_renew = new System.Windows.Forms.Button();
             this.button_hdh = new System.Windows.Forms.Button();
             this.button_msk = new System.Windows.Forms.Button();
-            this.button_byc = new System.Windows.Forms.Button();
+            this.button_byc_cz = new System.Windows.Forms.Button();
+            this.numericUpDown_msk = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button_byc_sp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_msk)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 40);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(550, 400);
             this.pictureBox1.TabIndex = 0;
@@ -50,7 +54,7 @@
             // 
             this.label_status.AutoSize = true;
             this.label_status.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_status.Location = new System.Drawing.Point(124, 420);
+            this.label_status.Location = new System.Drawing.Point(153, 9);
             this.label_status.Name = "label_status";
             this.label_status.Size = new System.Drawing.Size(241, 21);
             this.label_status.TabIndex = 1;
@@ -59,7 +63,7 @@
             // button_open
             // 
             this.button_open.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_open.Location = new System.Drawing.Point(623, 39);
+            this.button_open.Location = new System.Drawing.Point(569, 40);
             this.button_open.Name = "button_open";
             this.button_open.Size = new System.Drawing.Size(108, 42);
             this.button_open.TabIndex = 3;
@@ -70,7 +74,7 @@
             // button_renew
             // 
             this.button_renew.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_renew.Location = new System.Drawing.Point(623, 87);
+            this.button_renew.Location = new System.Drawing.Point(569, 88);
             this.button_renew.Name = "button_renew";
             this.button_renew.Size = new System.Drawing.Size(108, 42);
             this.button_renew.TabIndex = 4;
@@ -81,7 +85,7 @@
             // button_hdh
             // 
             this.button_hdh.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_hdh.Location = new System.Drawing.Point(623, 165);
+            this.button_hdh.Location = new System.Drawing.Point(569, 166);
             this.button_hdh.Name = "button_hdh";
             this.button_hdh.Size = new System.Drawing.Size(108, 42);
             this.button_hdh.TabIndex = 5;
@@ -92,29 +96,66 @@
             // button_msk
             // 
             this.button_msk.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_msk.Location = new System.Drawing.Point(623, 213);
+            this.button_msk.Location = new System.Drawing.Point(569, 214);
             this.button_msk.Name = "button_msk";
             this.button_msk.Size = new System.Drawing.Size(108, 42);
             this.button_msk.TabIndex = 6;
             this.button_msk.Text = "马赛克";
             this.button_msk.UseVisualStyleBackColor = true;
+            this.button_msk.Click += new System.EventHandler(this.button_msk_Click);
             // 
-            // button_byc
+            // button_byc_cz
             // 
-            this.button_byc.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button_byc.Location = new System.Drawing.Point(623, 261);
-            this.button_byc.Name = "button_byc";
-            this.button_byc.Size = new System.Drawing.Size(108, 42);
-            this.button_byc.TabIndex = 7;
-            this.button_byc.Text = "百叶窗";
-            this.button_byc.UseVisualStyleBackColor = true;
+            this.button_byc_cz.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_byc_cz.Location = new System.Drawing.Point(569, 262);
+            this.button_byc_cz.Name = "button_byc_cz";
+            this.button_byc_cz.Size = new System.Drawing.Size(108, 42);
+            this.button_byc_cz.TabIndex = 7;
+            this.button_byc_cz.Text = "垂直百叶窗";
+            this.button_byc_cz.UseVisualStyleBackColor = true;
+            this.button_byc_cz.Click += new System.EventHandler(this.button_byc_cz_Click);
+            // 
+            // numericUpDown_msk
+            // 
+            this.numericUpDown_msk.Location = new System.Drawing.Point(685, 232);
+            this.numericUpDown_msk.Name = "numericUpDown_msk";
+            this.numericUpDown_msk.Size = new System.Drawing.Size(59, 21);
+            this.numericUpDown_msk.TabIndex = 8;
+            this.numericUpDown_msk.Value = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(683, 217);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "单位大小：";
+            // 
+            // button_byc_sp
+            // 
+            this.button_byc_sp.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_byc_sp.Location = new System.Drawing.Point(569, 310);
+            this.button_byc_sp.Name = "button_byc_sp";
+            this.button_byc_sp.Size = new System.Drawing.Size(108, 42);
+            this.button_byc_sp.TabIndex = 10;
+            this.button_byc_sp.Text = "水平百叶窗";
+            this.button_byc_sp.UseVisualStyleBackColor = true;
+            this.button_byc_sp.Click += new System.EventHandler(this.button_byc_sp_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(756, 464);
-            this.Controls.Add(this.button_byc);
+            this.Controls.Add(this.button_byc_sp);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.numericUpDown_msk);
+            this.Controls.Add(this.button_byc_cz);
             this.Controls.Add(this.button_msk);
             this.Controls.Add(this.button_hdh);
             this.Controls.Add(this.button_renew);
@@ -124,6 +165,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_msk)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,7 +179,10 @@
         private System.Windows.Forms.Button button_renew;
         private System.Windows.Forms.Button button_hdh;
         private System.Windows.Forms.Button button_msk;
-        private System.Windows.Forms.Button button_byc;
+        private System.Windows.Forms.Button button_byc_cz;
+        private System.Windows.Forms.NumericUpDown numericUpDown_msk;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button_byc_sp;
     }
 }
 
