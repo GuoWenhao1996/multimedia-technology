@@ -53,8 +53,7 @@ public class HuffmanCode {
 
 	public static void main(String[] args) {
 
-		String file = "源文件999.txt";
-		String path = "E:\\郭大神的作业\\多媒体技术\\第5节课-压缩算法\\task1-Huffman\\";
+		String file = "HuffmanCode.java";
 		String text = HuffmanIO.readFile(path + file);
 
 		// we will assume that all our characters will have
@@ -71,22 +70,16 @@ public class HuffmanCode {
 			// print out results
 			System.out.println("SYMBOL\tWEIGHT\tHUFFMAN CODE");
 			printCodes(tree, new StringBuffer());
-			System.out.println("源文件：");
 			System.out.println(text);
 			String huffmanText = "";
 			huffmanText = setHuffmanText(huffmanText, text);
-			System.out.println("压缩后文件：");
 			System.out.println(huffmanText);
-			// HuffmanIO.writeFile(huffmanText, path + "Huffman_" +
-			// file.substring(0, file.length() - 4) + ".dat");
-			// System.out.println("压缩成功！文本文件压缩至->" + "Huffman_" +
-			// file.substring(0, file.length() - 4) + ".dat");
+			HuffmanIO.writeFile(huffmanText, path + "Huffman_" + file.substring(0, file.length() - 4) + ".dat");
+
 			HuffmanIO.writeFileByBinary(huffmanText, path + "HuffBin_" + file.substring(0, file.length() - 4) + ".dat");
-			System.out.println("压缩成功！二进制文件压缩至->" + "HuffBin_" + file.substring(0, file.length() - 4) + ".dat");
+
 
 		} catch (Exception e) {
-			System.err.println("文本中有非法字符！");
-			System.err.println("源文件：");
 			System.err.println(text);
 		}
 	}
