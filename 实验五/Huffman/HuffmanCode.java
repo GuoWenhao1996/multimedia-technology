@@ -53,7 +53,7 @@ public class HuffmanCode {
 
 	public static void main(String[] args) {
 
-		String file = "源文件999.txt";
+		String file = "lzw.c";
 		String path = "E:\\郭大神的作业\\多媒体技术\\第5节课-压缩算法\\task1-Huffman\\";
 		String text = HuffmanIO.readFile(path + file);
 
