@@ -1,0 +1,80 @@
+
+pmvs2
+E:\郭大神的作业\多媒体技术\第8节课-全景拼接+3D建模\3D校门\3D模型.nvm.cmvs\00\
+option-0000
+--------------------------------------------------
+--- Summary of specified options ---
+# of timages: 4 (enumeration)
+# of oimages: 0 (enumeration)
+level: 1  csize: 2
+threshold: 0.7  wsize: 7
+minImageNum: 3  CPU: 4
+useVisData: 1  sequence: -1
+--------------------------------------------------
+Reading images: ****
+01 3 2  Harris running ...Harris running ...Harris running ...Harris running ...7135 harris done
+DoG running...7357 harris done
+DoG running...7414 harris done
+7458 harris done
+DoG running...DoG running...9675 dog done
+9719 dog done
+9695 dog done
+9680 dog done
+done
+adding seeds 
+(2,167)(1,137)(0,167)(3,141)done
+---- Initial: 0 secs ----
+Total pass fail0 fail1 refinepatch: 116205 784 112415 3006 3790
+Total pass fail0 fail1 refinepatch: 100 0.67467 96.7385 2.58681 3.26148
+Expanding patches...
+---- EXPANSION: 84 secs ----
+Total pass fail0 fail1 refinepatch: 111750 84497 11970 15283 99780
+Total pass fail0 fail1 refinepatch: 100 75.6125 10.7114 13.6761 89.2886
+FilterOutside
+mainbody: 
+Gain (ave/var): 0.651452 0.258672
+85104 -> 84904 (99.765%)	0 secs
+Filter Exact: ****
+84904 -> 80898 (95.2817%)	0 secs
+FilterNeighbor:	80898 -> 76170 (94.1556%)	0 secs
+FilterGroups:	20
+76170 -> 73983 (97.1288%)	0 secs
+STATUS: 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 
+Expanding patches...
+---- EXPANSION: 36 secs ----
+Total pass fail0 fail1 refinepatch: 51689 28423 9031 14235 42658
+Total pass fail0 fail1 refinepatch: 100 54.9885 17.4718 27.5397 82.5282
+FilterOutside
+mainbody: 
+Gain (ave/var): 0.783327 0.289662
+102406 -> 102173 (99.7725%)	0 secs
+Filter Exact: ****
+102173 -> 93645 (91.6534%)	0 secs
+FilterNeighbor:	93645 -> 91380 (97.5813%)	0 secs
+FilterGroups:	20
+91380 -> 89470 (97.9098%)	0 secs
+STATUS: 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 
+Expanding patches...
+---- EXPANSION: 20 secs ----
+Total pass fail0 fail1 refinepatch: 29452 14886 6098 8468 23354
+Total pass fail0 fail1 refinepatch: 100 50.5433 20.7049 28.7519 79.2951
+FilterOutside
+mainbody: 
+Gain (ave/var): 0.940744 0.314464
+104356 -> 104205 (99.8553%)	0 secs
+Filter Exact: ****
+104205 -> 95947 (92.0752%)	0 secs
+FilterNeighbor:	95947 -> 94021 (97.9926%)	0 secs
+FilterGroups:	20
+94021 -> 92548 (98.4333%)	0 secs
+STATUS: 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 
+---- Total: 0 secs ----
